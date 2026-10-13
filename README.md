@@ -1,5 +1,4 @@
-# SAP-BTP-RAP-Travel-Application-Unmanaged Scenario
-This is an Restful Application(unmanaged Scenario) build on SAP BPT, for a Travel Agency
+
 # SAP BTP RAP: Travel Application (Unmanaged Scenario)
 
 End-to-end implementation of the SAP RESTful Application Programming Model (RAP) unmanaged scenario built on SAP BTP and modern ABAP Cloud using Eclipse ADT.
@@ -11,7 +10,7 @@ End-to-end implementation of the SAP RESTful Application Programming Model (RAP)
 * **`zbtp_i_u_Agency`**: Interfaces agency master data (`/dmo/agency`) with an association to `I_Country`.
 * **`zbtp_i_u_Travel` (Root View Entity)**: Defines the Business Object (BO) root view over `/dmo/travel`, establishing target associations to `_Agency`, `_Customer`, and standard `I_Currency`.
 
-### 2. Business Object Behavior Definition (`zbtp_i_u_travel.asbdef`)
+### 2. Business Object Behavior Definition (`zbtp_i_u_travel.bdef`)
 * Configured as an **unmanaged** scenario (`unmanaged implementation in class zbtp_i_u_travel unique`).
 * Enables lifecycle transactional operations: `create (authorization: global)`, `update`, and `delete`.
 * Protects key field integrity using `field (readonly) TravelId`.
