@@ -1,0 +1,8 @@
+@EndUserText.label: 'Travel Application Service Definition'
+define service ZBTP_I_U_TRAVEL_SD {
+  expose zbtp_i_u_Travel;
+  expose zbtp_i_u_Agency;
+  expose zbtp_i_u_customer;
+  expose I_Country;
+  expose I_Currency;
+}
