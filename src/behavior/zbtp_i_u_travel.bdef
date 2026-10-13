@@ -1,0 +1,12 @@
+unmanaged implementation in class zbtp_i_u_travel unique;
+
+define behavior for zbtp_i_u_Travel
+lock master
+authorization master ( instance )
+{
+  create ( authorization : global );
+  update;
+  delete;
+
+  field ( readonly ) TravelId;
+}
